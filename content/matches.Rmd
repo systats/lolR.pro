@@ -1,0 +1,43 @@
+---
+title: Matches Data
+---
+
+
+```{r, results = 'hide', message = F, warning = F, error = F, echo = F}
+load("data/matches_final.Rdata")
+
+library(DT)
+suppressPackageStartupMessages(library(dplyr))
+```
+
+
+## 2018
+
+```{r, echo = F}
+lol_matches_2018 <- matches_final %>% 
+  dplyr::filter(tourn_year == 2018) %>% 
+  dplyr::select(game_id:red_gold_per_min_deltas_0_10)
+
+DT::datatable(lol_matches_2018, 
+  extensions = 'Buttons', options = list(dom = 'Bfrtip', buttons = list(list(extend = 'colvis', columns = c(5:length(lol_matches_2018)))))
+)
+```
+
+
+## 2017
+
+```{r, echo = F}
+lol_matches_2017 <- matches_final %>% 
+  dplyr::filter(tourn_year == 2017) %>% 
+  dplyr::select(game_id:red_gold_per_min_deltas_0_10)
+
+DT::datatable(lol_matches_2017, 
+                extensions = 'Buttons', options = list(dom = 'Bfrtip', buttons = list(list(extend = 'colvis', columns = c(5:length(lol_matches_2018)))))
+)
+```
+
+
+
+
+
+

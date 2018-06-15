@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.js"></script>
+    
+    <script src="/js/highlight.pack.js"></script>
+  </head>
+  
+  <body>
+    <div class="ui container">
+      <div class="ui top fixed inverted compact icon menu">
+      
+        
+        <a class="item" href="/">
+  
+  lolR
+</a>
+
+<div class="ui dropdown item">
+  Statistics 
+  <i class="dropdown icon"></i>
+  <div class="menu">
+    <a class="item">
+      <img class = "ui top aligned right floated image" src="http://hexb.in/hexagons/shiny.png">
+      <div class="content">
+        <h5 class="ui header">
+          Shiny Apps
+          <div class="gray sub header">ML</div>
+        </h5>
+      </div>
+    </a>
+    <a class="item" href="/semanticui/">
+      <img class = "ui tiny right floated middle aligned image" src="https://semantic-ui.com/images/logo.png">
+      <div class="content">
+        <h5 class="ui header">
+          Semantic UI
+          <div class="gray sub header">RNN</div>
+        </h5>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="right compact menu">
+  <div class="ui dropdown item">
+    <i class="database icon"></i>  
+    Datahub
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="/matches">
+        <i class="trophy icon"></i>  
+        Matches
+      </a>
+      <a class="item" href="/tags/">
+        <i class="chess queen icon"></i>  
+        Champions
+      </a>
+    </div>
+  </div>
+  <div class="ui dropdown item">
+    Blog
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="/categories/">
+        <i class="tag icon"></i>  
+        Categories
+      </a>
+      <a class="item" href="/tags/">
+        <i class="tags icon"></i>  
+        Tags
+      </a>
+    </div>
+  </div>
+  <a class="item" href="/about/">About</a>
+</div>
+
+
+
+
+
+
+
+      </div>
+      <br>
+      <br>
+    </div>
+     
+  </div>
+  <img src = "/banner.jpg" style="width:100%;">
+  <div class="ui container">
+
+
+    
+
+<div class="article-meta">
+<h1><span class="title">Semantic UI</span></h1>
+
+
+</div>
+
+<main>
+  
+
+<ul>
+<li><a href="https://www.codementor.io/">code-mentor</a></li>
+<li><a href="https://bookdown.org/yihui/blogdown/">blogdown for websites</a></li>
+<li><a href="https://speckyboy.com/beautifully-designed-admin-dashboards/">dashboard examples</a></li>
+<li><a href="https://www.nounou-top.fr/">https://www.nounou-top.fr/</a></li>
+<li><a href="http://learnsemantic.com/preface/introduction.html">learn semantic ui</a></li>
+</ul>
+
+<h2 id="other-stuff">Other Stuff</h2>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Anyone know of an R package for interfacing with Alexa Skills? <a href="https://twitter.com/thosjleeper?ref_src=twsrc%5Etfw">@thosjleeper</a> <a href="https://twitter.com/xieyihui?ref_src=twsrc%5Etfw">@xieyihui</a> <a href="https://twitter.com/drob?ref_src=twsrc%5Etfw">@drob</a> <a href="https://twitter.com/JennyBryan?ref_src=twsrc%5Etfw">@JennyBryan</a> <a href="https://twitter.com/HoloMarkeD?ref_src=twsrc%5Etfw">@HoloMarkeD</a> ?</p>&mdash; Jeff Leek (@jtleek) <a href="https://twitter.com/jtleek/status/852205086956818432?ref_src=twsrc%5Etfw">April 12, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p><strong>XMin</strong> is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the  <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> book.</p>
+
+<h1 id="custom-layouts">Custom layouts</h1>
+
+<p>There are two layout files under <code>layouts/partials/</code> that you may want to override: <code>head_custom.html</code> and <code>foot_custom.html</code>. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file <code>layouts/partials/foot_custom.html</code> to support LaTeX math via MathJax and center images automatically:</p>
+
+<pre><code class="language-html">&lt;script src=&quot;//yihui.name/js/math-code.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;
+&lt;/script&gt;
+&lt;script async src=&quot;//yihui.name/js/center-img.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h1 id="other-features">Other features</h1>
+
+<p>I could have added more features to this theme, but I decided not to, since I have no intention to make this theme feature-rich. However, I will teach you how. I have prepared several examples via pull requests at <a href="https://github.com/yihui/hugo-xmin/pulls">https://github.com/yihui/hugo-xmin/pulls</a>, so that you can see the implementations of these features when you check out the diffs in the pull requests. For example, you can:</p>
+
+<ul>
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/3">Enable Google Analytics</a></p></li>
+
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/4">Enable Disqus comments</a></p></li>
+
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/5">Enable highlight.js for syntax highlighting of code blocks</a></p></li>
+
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/2">Display categories and tags on a page</a></p></li>
+
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/7">Add a table of contents</a></p></li>
+
+<li><p><a href="https://github.com/yihui/hugo-xmin/pull/6">Add a link in the footer of each page to &ldquo;Edit this page&rdquo; on Github</a></p></li>
+</ul>
+
+<p>To fully understand these examples, you have to read <a href="https://bookdown.org/yihui/blogdown/templates.html">the section on Hugo templates</a> in the <strong>blogdown</strong> book.</p>
+
+<h2 id="examples-of-semantic-ui-homepages">Examples of Semantic UI Homepages</h2>
+
+<div class="ui three column grid">
+  <div class="column">
+    <a href="https://moneytracker.cc/" target="_blank">
+      <img class = "ui large image" src="/images/moneytracker.png">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.mistay.in/" target="_blank">
+      <img class = "ui large image" src="/images/mistay.png">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.clubom.com.br/" target="_blank">
+      <img class = "ui large image" src="/images/clubom.png">
+   </a>
+  </div>
+<!--- second image line --->
+  <div class="column">
+    <a href="https://edabit.com/" target="_blank">
+      <img class = "ui large image" src="/images/edabit.png">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.seeuletter.com/" target="_blank">
+      <img class = "ui large image" src="/images/seeuletter.png">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.blackship.com/" target="_blank">
+      <img class = "ui large image" src="/images/blackship.png">
+   </a>
+  </div>
+</div>
+<div class="ui three column grid">
+  <div class="column">
+    <a href="https://roadmap.space/" target="_blank">
+      <img class = "ui large image" src="/images/roadmap.png">
+    </a>
+  </div>
+</div>
+
+</main>
+
+    </div>
+    <br>
+    <footer>
+    <div class="ui grey inverted bottom attached vertical segment">
+      <br>
+      <br>
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">About</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Sitemap</a>
+              <a href="#" class="item">Contact Us</a>
+              <a href="#" class="item">Religious Ceremonies</a>
+              <a href="#" class="item">Gazebo Plans</a>
+            </div>
+          </div>
+          <div class="three wide column">
+            <h4 class="ui inverted header">Services</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Banana Pre-Order</a>
+              <a href="#" class="item">DNA FAQ</a>
+              <a href="https://en.wiktionary.org/wiki/sapiosexual" target="_blank" class="item">Sapiosexuality</a>
+              <a href="#" class="item">Favorite X-Men</a>
+            </div>
+          </div>
+          <div class="seven wide column">
+            <h4 class="ui inverted header">Let's connect!</h4>
+            <p>
+              <a href="" target="_blank" rel="nofollow" class = "ui circular icon inverted button">
+                <i class="inverted facebook icon large"></i>
+              </a>
+              <a href="https://twitter.com/systatz" target="_blank" rel="nofollow" class = "ui circular icon inverted button">
+                <i class="inverted twitter icon large"></i>
+              </a>
+              <a href="https://github.com/systats" target="_blank" rel="nofollow" class = "ui circular icon inverted button">
+                <i class="inverted github icon large"></i>
+              </a>
+              <a href="" target="_blank" rel="nofollow" class = "ui circular icon inverted button">
+                <i class="inverted patreon icon large"></i>
+              </a>
+              <a href="mailto:sy-ro@gmx.net" target="_blank" rel="nofollow" class = "ui circular icon inverted button">
+                <i class="inverted mail icon large"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+    </footer>
+    <script>
+      $('.ui.dropdown').dropdown();
+      $('.tabular.menu .item').tab();
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+  
+</html>
+
+
+
+
+
